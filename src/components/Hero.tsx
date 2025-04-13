@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
@@ -15,7 +14,7 @@ const Hero = () => {
               WorkBridge helps job seekers find entry-level positions, internships, and skill-building resources that promote economic inclusion and decent work for all.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
-              <Link to="/services">
+              <Link to="/jobs">
                 <Button className="btn-primary">Find Opportunities</Button>
               </Link>
               <Link to="/register">

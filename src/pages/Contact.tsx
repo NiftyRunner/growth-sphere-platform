@@ -1,4 +1,3 @@
-
 import ContactForm from '@/components/ContactForm';
 import { MapPin, Mail, Phone, Clock } from 'lucide-react';
 
@@ -30,7 +29,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-lg">Our Location</h3>
-                    <p className="text-gray-600">1234 Career Street, Employment City, EC 56789</p>
+                    <p className="text-gray-600">Manipal, Karnataka, India</p>
                   </div>
                 </div>
 
@@ -51,8 +50,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-lg">Call Us</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-gray-600">+1 (555) 987-6543</p>
+                    <p className="text-gray-600">+91 98765 43210</p>
                   </div>
                 </div>
 

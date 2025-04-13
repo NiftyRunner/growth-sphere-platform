@@ -3,6 +3,7 @@ import { BriefcaseIcon, GraduationCap, Blocks, Users, ArrowUpRight, Code, Briefc
 import ServiceCard from '@/components/ServiceCard';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import Navbar from '@/components/Navbar';
 
 const Services = () => {
   const serviceCategories = [
@@ -61,6 +62,7 @@ const Services = () => {
 
   return (
     <div>
+      <Navbar/>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-green-50">
         <div className="container-custom">

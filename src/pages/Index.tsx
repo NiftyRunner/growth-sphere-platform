@@ -1,4 +1,3 @@
-
 import { BriefcaseIcon, GraduationCap, HandshakeIcon, UsersIcon } from 'lucide-react';
 import Hero from '@/components/Hero';
 import FeatureCard from '@/components/FeatureCard';
@@ -6,6 +5,7 @@ import JobCard from '@/components/JobCard';
 import TestimonialCard from '@/components/TestimonialCard';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import Navbar from '@/components/Navbar';
 
 const Index = () => {
   const features = [
@@ -81,6 +81,7 @@ const Index = () => {
 
   return (
     <div>
+      <Navbar/>
       <Hero />
       
       {/* Features Section */}
@@ -101,36 +102,6 @@ const Index = () => {
                 icon={feature.icon}
               />
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Recent Jobs Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold">Recent Opportunities</h2>
-            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-              Discover our latest job listings and opportunities for career growth.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {jobListings.map((job, index) => (
-              <JobCard 
-                key={index}
-                title={job.title}
-                company={job.company}
-                location={job.location}
-                type={job.type}
-                description={job.description}
-                imageUrl={job.imageUrl}
-              />
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Link to="/services">
-              <Button className="btn-primary">View All Opportunities</Button>
-            </Link>
           </div>
         </div>
       </section>
